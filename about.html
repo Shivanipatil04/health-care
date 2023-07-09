@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+<style>
+
+.container
+{
+    background-color:lightpink;
+    padding-top: 200px;
+}
+.content
+{
+    padding-top: 10px;
+}
+#nav
+{
+    color: black;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin-top: -150px;
+}
+.purpose
+{
+    align-items:center;
+    text-align: center;
+}
+.para
+{
+    text-align: center;
+    justify-content: space-around;
+    line-height: 1.3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.tag
+{
+    font-style: italic;
+    margin-top:100px ;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+            .container {
+                padding-top: 100px;
+            }
+
+            #nav {
+                margin-top: -100px;
+            }
+
+            .tag {
+                margin-top: 50px;
+            }
+        }
+}
+</style>
+<body style="background-color: lightpink">
+    
+    <div class="container">
+        <div class="header">
+                <h3 id="nav" style="background-color: whitesmoke;">HealthCare!<br>"Your wellness journey starts here." </h3>
+               
+         <div class="content">
+            <h2 class="purpose">Our purpose</h2>
+            <p class="para">Welcome to our healthcare web application! <br>
+                Our purpose is to empower individuals by providing <br>them with convenient and accessible healthcare services, <br>
+                promoting wellness,and enhancing overall well-being.<br>We understand that healthcare plays a crucial role in <br>
+                everyone's lives.We aim to break down barriers to<br> healthcare access by providing an online platform that allows<br>
+                 users to connect with healthcare professionals anytime, <br>anywhere. Whether you need a doctor's consultation, medical<br>
+                advice, or information about local healthcare facilities,<br> our app strives to make it easily accessible to you.
+            </p>
+        </div>
+           
+        </div>
+    </div>
+    <p class="tag">-By CodeCrafters</p>
+</body>
+</html>
