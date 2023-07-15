@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diabetes</title>
+  <title>Covid-19</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <style>
-    /* Custom CSS */
     body {
-      background-color: lightcyan;
+      background-color: #ffffff;
       
      
       color: #333333;
@@ -22,19 +21,42 @@
       font-size: 40px;
       font-weight: bold;
       color: #ffffff;
+      background-color: #0074D9;
+      padding: 15px;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius: 10px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       font-family: 'Raleway', sans-serif;
     }
 
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color:lightcyan;
+      margin: 0 auto;    
       padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
-
+    .box {
+    background-color: #0074D9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+    .box img {
+      display: block;
+      margin: 0 auto; 
+    }
+    .box-container {
+      margin-top: 7%; 
+    }
+    .btn-wrapper {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: transform 0.3s;
+    }
+    .box:hover .btn-wrapper {
+      transform: translateX(-50%) translateY(-10px);
+    }
     .section {
       margin-bottom: 50px;
     }
@@ -46,10 +68,13 @@
       font-size: 28px;
       color: #333333;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
     .section p {
       font-size: 18px;
+      text-align: center;
+      margin-bottom: -30px;
     }
 
     .section img {
@@ -105,52 +130,44 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 
-  <h1 class="animate__animated animate__fadeInDown">Diabetes</h1>
+  <h1 class="animate__animated animate__fadeInDown">-Covid-19-</h1>
 
   <div class="container animate__animated animate__fadeInUp">
     <div class="section">
-      <h2>What is Diabetes?</h2>
-      <p>Diabetes is a chronic condition that affects the body's ability to regulate blood sugar levels. It occurs when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces.</p>
+      <h2>What is Covid-19?</h2>
+      <p>COVID-19, also known as Coronavirus Disease 2019, is an infectious disease caused by the severe acute respiratory syndrome coronavirus 2,COVID-19 is primarily spread through respiratory droplets when an infected person coughs, sneezes, talks, or breathes.</p>
      
     </div>
-
-    <div class="section">
-      <h2>Symptoms of Diabetes</h2>
-      <ul>
-        <li>Frequent urination</li>
-        <li>Increased thirst</li>
-        <li>Extreme hunger</li>
-        <li>Unexplained weight loss</li>
-        <li>Fatigue</li>
-        <li>Blurred vision</li>
-      </ul>
-     
-    </div>
-
-    <div class="section">
-      <h2>Precautions for Diabetes</h2>
-      <ol>
-        <li>Eat a healthy diet</li>
-        <li>Exercise regularly</li>
-        <li>Maintain a healthy weight</li>
-        <li>Monitor blood sugar levels</li>
-        <li>Take prescribed medications</li>
-        <li>Avoid smoking and excessive alcohol consumption</li>
-      </ol>
+    <div class="container box-container">
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <img src="images/d-Symptoms.jpg" alt="Image 1" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='covid-symptoms.html'">Symptoms</button>
+            </div>
           </div>
-
-    <div class="section">
-      <h2>Solutions for Diabetes</h2>
-      <p>While there is no cure for diabetes, it can be managed effectively through lifestyle changes and medication. Some common solutions include:</p>
-      <ul>
-        <li>Insulin therapy</li>
-        <li>Oral medications</li>
-        <li>Dietary changes</li>
-        <li>Regular physical activity</li>
-        <li>Monitoring blood sugar levels</li>
-        <li>Regular check-ups with healthcare professionals</li>
-      </ul>
-     
+        </div>
+        <div class="col">
+          <div class="box">
+            <img src="images/precautions.jpg" alt="Image 2" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='covid-precautions.html'">Precautions</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="box">
+            <img src="images/solutions.jpg" alt="Image 3" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='covid-solutions.html'">Solutions</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
     </div>
   </div>
 

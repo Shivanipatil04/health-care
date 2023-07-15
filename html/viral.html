@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Viral Infections</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .header{
+      margin-top: 5%;
+      color: #FFFFFF;
+      background-color: #0074D9;
+      padding: 15px;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius: 10px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #0074D9;
+      padding: 15px;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: 'Raleway', sans-serif;
+    }
+    .section h2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 28px;
+      color: #333333;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: -30px;
+    }
+   .box {
+    background-color: #0074D9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+    .box img {
+      display: block;
+      margin: 0 auto; 
+    }
+    .box-container {
+      margin-top: 7%; 
+    }
+    .btn-wrapper {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: transform 0.3s;
+    }
+    .box:hover .btn-wrapper {
+      transform: translateX(-50%) translateY(-10px);
+    }
+  </style>
+</head>
+<body style="background-color: #FFFFFF">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+  <h1 class="animate__animated animate__fadeInDown">-Viral Infections-</h1>
+  <div class="container animate__animated animate__fadeInUp">
+    <div class="section">
+      <h2>What are viral infections?</h2>
+      <p>Viral infections are caused by various types of viruses and are characterized by the invasion and replication of these infectious agents within the cells of a host organism. Viruses are tiny infectious particles that cannot survive or reproduce outside a host cell</p>
+    </div>
+    
+    <div class="container box-container">
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <img src="images/cough.jpg" alt="Image 1" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='cough.html'">Cough</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="box">
+            <img src="images/cold.jpg" alt="Image 2" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='cold.html'">Cold</button>
+            </div>
+          </div>
+        </div>
+      <div class="col">
+        <div class="box">
+          <img src="images/headache.jpg" alt="Image 3" width="250" height="250">
+          <div class="btn-wrapper">
+            <button class="btn btn-primary" onclick="window.location.href='headache.html'">Headache</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+  <script>
+    $(document).ready(function() {
+      $('.animate__fadeInLeft').addClass('animate__delay-1s');
+      $('.animate__fadeInRight').addClass('animate__delay-1s');
+    });
+  </script>
+</body>
+</html>
