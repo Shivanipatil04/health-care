@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood-pressure</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      
+     
+      color: #333333;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #0074D9;
+      padding: 15px;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .container {
+      margin: 0 auto;    
+      padding: 20px;
+    }
+    .box {
+    background-color: #0074D9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+    .box img {
+      display: block;
+      margin: 0 auto; 
+    }
+    .box-container {
+      margin-top: 7%; 
+    }
+    .btn-wrapper {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: transform 0.3s;
+    }
+    .box:hover .btn-wrapper {
+      transform: translateX(-50%) translateY(-10px);
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 28px;
+      color: #333333;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: -30px;
+    }
+
+    .section img {
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .section ul,
+    .section ol {
+      margin-left: 30px;
+    }
+
+    .animate__animated {
+      animation-duration: 1s;
+    }
+
+    .animate__fadeInLeft {
+      animation-name: fadeInLeft;
+    }
+
+    .animate__fadeInRight {
+      animation-name: fadeInRight;
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+  <h1 class="animate__animated animate__fadeInDown">-Blood-pressure-</h1>
+
+  <div class="container animate__animated animate__fadeInUp">
+    <div class="section">
+      <h2>What is blood-pressure?</h2>
+      <p>Blood pressure refers to the force exerted by the blood against the walls of the blood vessels as it circulates through the body. It is measured in millimeters of mercury (mmHg) and is typically represented by two numbers: systolic pressure over diastolic pressure.</p>
+     
+    </div>
+    <div class="container box-container">
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <img src="images/d-Symptoms.jpg" alt="Image 1" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='bp-symptoms.html'">Symptoms</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="box">
+            <img src="images/precautions.jpg" alt="Image 2" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='bp-precautions.html'">Precautions</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="box">
+            <img src="images/solutions.jpg" alt="Image 3" width="250" height="250">
+            <div class="btn-wrapper">
+              <button class="btn btn-primary" onclick="window.location.href='bp-solutions.html'">Solutions</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+    </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+  <script>
+    $(document).ready(function() {
+      $('.animate__fadeInLeft').addClass('animate__delay-1s');
+      $('.animate__fadeInRight').addClass('animate__delay-1s');
+    });
+  </script>
+</body>
+
+</html>
